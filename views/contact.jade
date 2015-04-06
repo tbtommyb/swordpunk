@@ -1,0 +1,28 @@
+extends ./layout.jade
+include mixins
+
+block header
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "/", "active" ) Home
+            +nav_item( "venue" ) Venue
+            +nav_item( "tickets" ) Tickets
+            +nav_item( "dan" ) Dan
+            +nav_item( "galleries" ) Galleries
+            +nav_item( "contact" ) Contact
+             
+block content
+    .container-fluid#background
+        .row
+            .col-12.text-panel
+              h2 Contact us
+              p| For more information please email Dan at:
+               | <a href="mailto:dan@swordpunk.co.uk">dan@swordpunk.co.uk</a>
+              p| You can also visit our Facebook page 
+               | <a href="https://www.facebook.com/pages/Swordpunk/473385799410217">here</a>.
+              p| To keep updated with Swordpunk events and training 
+               | weekends, why not join our 
+               | <a href="http://eepurl.com/w9ttj">mailing list</a>?

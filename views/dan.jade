@@ -1,0 +1,32 @@
+extends ./layout.jade
+include mixins
+ 
+block header
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "/", "active" ) Home
+            +nav_item( "venue" ) Venue
+            +nav_item( "tickets" ) Tickets
+            +nav_item( "dan" ) Dan
+            +nav_item( "galleries" ) Galleries
+            +nav_item( "contact" ) Contact
+            
+block content
+    .container-fluid#background
+        .row
+            .col-12.text-panel
+              h2 Meet Dan
+              p|Dan trains regularly with longswords and single-edge swords, including 
+               |with buckler. He is also a dab hand at staff weapons and daggers, 
+               |primarily in the Liechtenauer tradition.
+              p|Dan is also well-versed in stage combat and sports fencing. Over the 
+               |years he has had the incredible good fortune to train with many 
+               |highly-skilled weapons teachers from across the world and in diverse disciplines.
+              p|Whether you're just starting out or already have some experience under 
+               |your belt, Dan knows exactly how to get the best out of you.
+        .row
+            img#border.img-responsive.center-block(src='/images/dan.jpg')
+              

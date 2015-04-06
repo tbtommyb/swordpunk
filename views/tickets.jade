@@ -1,0 +1,26 @@
+extends ./layout.jade
+include mixins
+
+block header
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "/", "active" ) Home
+            +nav_item( "venue" ) Venue
+            +nav_item( "tickets" ) Tickets
+            +nav_item( "dan" ) Dan
+            +nav_item( "galleries" ) Galleries
+            +nav_item( "contact" ) Contact
+            
+block content
+    .container-fluid#background
+        .row
+            .col-12.text-panel
+              h2 Book tickets
+              p|Tickets for Swordpunk II are £75 for the weekend. Spaces are limited to 
+               |30 participants per event.
+              p To book your place, please use the [link below].
+              p| Note that you can now pay a deposit to guarantee your place for the 
+               |weekend and pay the remainder at a later date.

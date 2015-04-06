@@ -1,0 +1,67 @@
+include mixins
+
+doctype
+html( lang="en" )
+    head
+        title Swordpunk
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Swordpunk' )
+        //- Bootswatch Theme
+        link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css", rel="stylesheet")
+        link(rel="stylesheet", href='/stylesheets/style.css')
+ 
+    body
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+ 
+        script( src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' )
+        script( src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' )
+        script( src='/javascripts/script.js')
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "index.html", "active" ) Home
+            +nav_item( "venue.html" ) Venue
+            +nav_item( "tickets.html" ) Tickets
+            +nav_item( "dan.html" ) Dan
+            +nav_item( "galleries.html" ) Galleries
+            +nav_item( "contact.html" ) Contact
+
+        
+        .container-fluid#background
+            .container-fluid
+                .row
+                    .col-md-3.col-sm-6.col-xs-6
+                      .profile
+                        h4 NOVICE
+                        .wrapper
+                          img#profile.img-responsive.center-block(src='/images/novice-web.jpg')
+                          .overlay
+                            p The novice isn't that good.
+                    .col-md-3.col-sm-6.col-xs-6
+                      .profile
+                        h4 WARRIOR
+                        .wrapper
+                          img#profile.img-responsive.center-block(src='/images/warrior-web.jpg')
+                          .overlay
+                            p The novice isn't that good.
+                    .col-md-3.col-sm-6.col-xs-6
+                      .profile
+                        h4 CIRCUS ARTIST
+                        .wrapper
+                          img#profile.img-responsive.center-block(src='/images/circus-web.jpg')
+                          .overlay
+                            p The novice isn't that good.
+                    .col-md-3.col-sm-6.col-xs-6
+                      .profile
+                        h4 ADVENTURER
+                        .wrapper
+                          img#profile.img-responsive.center-block(src='/images/adventurer-web.jpg')
+                          .overlay
+                            p The novice isn't that good.
+                .row
+                  .container#text-panel
+                    h2 Text to go here.
+                    p And here.
