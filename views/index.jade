@@ -4,19 +4,20 @@ include mixins
 block header
         .container-fluid#title
             img#title-image(src='/images/title.png')
-        +nav("Swordpunk", "title_menu")
-            +nav_item( "/", "active" ) Home
+        +nav("Swordpunk", "title-menu")
+            +nav_item( "/" ) Home
             +nav_item( "venue" ) Venue
-            +nav_item( "tickets" ) Tickets
             +nav_item( "dan" ) Dan
+            +nav_item( "tickets" ) Tickets
             +nav_item( "galleries" ) Galleries
             +nav_item( "contact" ) Contact
             
 block content        
-        .container-fluid#background
+        .container-fluid.background
+          .row.paper
             .row
               .col-12.text-panel
-                h2 Learn to do cool things with sharp and dangerous objects
+                h2 Cool things with sharp and dangerous objects
                 p| Do you like fighting with swords, cracking whips, throwing rope darts 
                  | or playing with spears, axes or knives? That's the kind of thing we like
                  |  too! Come to Swordpunk and you'll get to play with all of the above, 
@@ -24,64 +25,23 @@ block content
                 p| At Swordpunk you'll pick up new skills, work on the ones you already 
                  |have before putting them to the test in the infamous Swordpunk Assault 
                  |Course. What's more, you'll be able to do all this in glorious nature.
-            .row.wrap
-                .col-md-6.col-sm-6.col-xs-6
-                    .profile
+            .row.wrap               
+                .col-md-3.col-sm-6.col-xs-12
                         .wrapper
-                          img.profile.img-responsive.center-block(src='/images/novice-web2.jpg')
-                          .overlay
-                            p The novice isn't that good.
-                        h3 THE NOVICE
-                .col-md-6.col-sm-6.col-xs-6
-                    .profile
+                          img.profile.img-responsive.center-block.clipped(src='/images/novice-web2.jpg')
+                        h3 NOVICE
+                .col-md-3.col-sm-6.col-xs-12
                         .wrapper
-                          img.profile.img-responsive.center-block(src='/images/warrior-web.jpg')
-                          .overlay
-                            p The novice isn't that good.
-                        h3 THE WARRIOR
-                .col-md-6.col-sm-6.col-xs-6
-                    .profile
+                          img.profile.img-responsive.center-block.clipped(src='/images/warrior-ps.jpg')
+                        h3 WARRIOR
+                .col-md-3.col-sm-6.col-xs-12
                         .wrapper
-                          img.profile.img-responsive.center-block(src='/images/circus-web.jpg')
-                          .overlay
-                            p The novice isn't that good.
-                        h3 THE CIRCUS ARTIST
-                .col-md-6.col-sm-6.col-xs-6
-                    .profile
+                          img.profile.img-responsive.center-block.clipped(src='/images/circus-ps.jpg')
+                        h3 CIRCUS ARTIST
+                .col-md-3.col-sm-6.col-xs-12
                         .wrapper
-                          img.profile.img-responsive.center-block(src='/images/adventurer-web.jpg')
-                          .overlay
-                            p The novice isn't that good.
-                        h3 THE ADVENTURER
-            .row.schedule.wrap
-                  .col-md-4.col-sm-3.col-xs-12
-                    h4 Saturday
-                  .col-md-8.col-sm-9.col-xs-12
-                    h5 Arrival
-                    p| Set up camp, meet your fellow Swordpunkers, hang out and explore 
-                     | your new surroundings.
-                    h5 Workshops
-                    p Develop your sword combat technique with a range of weapons.
-                    p| Work with throwing weapons such as knives, axes, bo-shuriken 
-                     |and tomahawks.
-                    p Play with soft weapons like bull whips and rope darts.
-                    h5 Fire Circle
-                    p| Put your new fighting skills to the test in a gladiatorial contest!
-                     | This is the time to get your glad-rags on, whether they be 
-                     |barbarian, ninja, tribal leader - whatever floats your boat! We'll be
-                     | showing off our best swashbuckling moves in the hallowed Ring of 
-                     |Fire and Skulls, followed by...
-                    h5 Dinner
-                    p| A sumptuous evening feast will be provided for all, with much
-                     | eating, drinking, dancing and making merry.
-            .row.schedule.wrap      
-                  .col-md-4.col-sm-3.col-xs-12
-                    h4 Sunday
-                  .col-md-8.col-sm-9.col-xs-12
-                    h5 Open training
-                    p| Work at your own pace on the techniques from the previous day. 
-                     |Your instructors will be on hand for guidance and advice.
-                    h5 Swordpunk Assault Course
-                    p| The fearsome final test of your abilities. Be brave, for you will 
-                     |have been well-trained and have the chance to win some glorious treasure!
+                          img.profile.img-responsive.center-block.clipped(src='/images/adventurer-ps.jpg')
+                        h3 ADVENTURER
+          .row.paper-bottom
+            .col-12.text-panel
 

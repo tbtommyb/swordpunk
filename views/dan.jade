@@ -7,16 +7,16 @@ block header
         .container
         
         +nav("Swordpunk", "title_menu")
-            +nav_item( "/", "active" ) Home
+            +nav_item( "/" ) Home
             +nav_item( "venue" ) Venue
-            +nav_item( "tickets" ) Tickets
             +nav_item( "dan" ) Dan
+            +nav_item( "tickets" ) Tickets
             +nav_item( "galleries" ) Galleries
             +nav_item( "contact" ) Contact
             
 block content
-    .container-fluid#background
-        .row
+    .container-fluid.background
+        .row.paper
             .col-12.text-panel
               h2 Meet Dan
               p|Dan trains regularly with longswords and single-edge swords, including 
@@ -27,6 +27,7 @@ block content
                |highly-skilled weapons teachers from across the world and in diverse disciplines.
               p|Whether you're just starting out or already have some experience under 
                |your belt, Dan knows exactly how to get the best out of you.
-        .row
-            img#border.img-responsive.center-block(src='/images/dan.jpg')
+              img#border.img-responsive.center-block(src='/images/dan.jpg')
+        .row.paper-bottom
+          .col-12.text-panel
               

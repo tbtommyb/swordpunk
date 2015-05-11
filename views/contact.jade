@@ -7,16 +7,16 @@ block header
         .container
         
         +nav("Swordpunk", "title_menu")
-            +nav_item( "/", "active" ) Home
+            +nav_item( "/" ) Home
             +nav_item( "venue" ) Venue
+            +nav_item( "dan" ) Dan            
             +nav_item( "tickets" ) Tickets
-            +nav_item( "dan" ) Dan
             +nav_item( "galleries" ) Galleries
             +nav_item( "contact" ) Contact
              
 block content
-    .container-fluid#background
-        .row
+    .container-fluid.background
+        .row.paper
             .col-12.text-panel
               h2 Contact us
               p| For more information please email Dan at:
@@ -26,3 +26,5 @@ block content
               p| To keep updated with Swordpunk events and training 
                | weekends, why not join our 
                | <a href="http://eepurl.com/w9ttj">mailing list</a>?
+        .row.paper-bottom
+          .col-12.text-panel

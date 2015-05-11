@@ -7,15 +7,16 @@ block header
         .container
         
         +nav("Swordpunk", "title_menu")
-            +nav_item( "/", "active" ) Home
+            +nav_item( "/" ) Home
             +nav_item( "venue" ) Venue
-            +nav_item( "tickets" ) Tickets
             +nav_item( "dan" ) Dan
+            +nav_item( "tickets" ) Tickets
             +nav_item( "galleries" ) Galleries
             +nav_item( "contact" ) Contact
              
 block content
-    .container-fluid#background
+    .container-fluid.background
+      .row.paper
         .row
             .col-12.text-panel
               h2 Venue and location
@@ -33,4 +34,6 @@ block content
           .col-12.text-panel
             p You can find Monks Kirby with the map below:
             .row
-                iframe.center-block(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9728.029206571046!2d-1.3221949999999998!3d52.4427825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877443988fc4c39%3A0xdd2a196074be7b8f!2sMonks+Kirby%2C+Rugby%2C+Warwickshire+CV23!5e0!3m2!1sen!2suk!4v1424292290759" width="600" height="400" frameborder="0" style="border:0")       
+                iframe.center-block(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9728.029206571046!2d-1.3221949999999998!3d52.4427825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877443988fc4c39%3A0xdd2a196074be7b8f!2sMonks+Kirby%2C+Rugby%2C+Warwickshire+CV23!5e0!3m2!1sen!2suk!4v1424292290759" width="600" height="400" frameborder="0" style="border:0")
+      .row.paper-bottom
+        .col-12.text-panel    

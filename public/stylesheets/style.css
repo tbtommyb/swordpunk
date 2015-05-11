@@ -13,16 +13,30 @@
 .navbar-default {
   background-color: black;
   }
-  
-.navbar-nav > li > a {
-  padding-top:5px !important;
-  padding-bottom:5px !important;
+
+.navbar-brand, .navbar-nav > li >a {
+  line-height: 40px;
+  padding: 10px 15px;
+  font-family: 'flat-earth-scribe';
+  font-size: 27px;
+}
+.navbar-toggle {
+    margin: 20px;
+    padding: 20px;
 }
 
-.navbar {
-  min-height:32px !important
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: rgba(231, 228, 235, 255);
 }
-  
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: rgba(255, 220, 127, 255);
+}
+
+.navbar-default .navbar-nav > li:nth-child(4) {
+    background-color: rgba(237, 150, 42, 255);
+}
 .container-fluid#title {
   padding-left: 0px;
 }
@@ -33,7 +47,11 @@
   margin: auto;
   }
 
-.container-fluid#background {
+.clipped {
+  -webkit-clip-path: ellipse(35% 50% at 50% 50%);
+}
+
+.container-fluid.background {
   background: url('/images/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,13 +64,30 @@
   width: 100%;
   padding-right: 0px;
 }
-  
-.text-panel {
-  width: 90%;
-  background-color: rgba(255,255,255,0.9);
+
+.row.paper {
+  background: url('/images/paper-background-fade.png') no-repeat;
+  background-size: 100%;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.paper-bottom {
+  background: url('/images/paper-bottom-fade.png') no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  margin-top: -25px;
+}
+  
+.text-panel {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
   }
 
 .schedule {
@@ -62,15 +97,14 @@
   margin: auto;
   }
 
-.text-panel h2 {
-  padding-left: 15px;
-  padding-top: 15px;
-  }
-
 p {
-  padding: 5px 15px 10px 15px;
+  padding: 5px 15px 15px 15px;
   font-size: 16px;
   }
+
+.text-panel h2, p {
+  padding: 5px 25px 15px 35px;
+}
    
 #info1 {
   position: relative;
@@ -92,26 +126,6 @@ p {
   right: 2px;
   bottom: 2px;
  }
-
-.profile {
-  background-color: rgba(255,255,255,0.9);
-  margin: 0px 0px 20px 0px;
-  padding-bottom: 0px;
-  border-style: solid;
-  border-color: rgba(255,255,255,0);
-  border-width: 2px;
-}
-
-.profile h3 {
-  padding-left: 15px;
-  padding-top: 8px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  color: rgba(0,0,0,0.8);
-  text-align: left;
-  font-weight: normal;
-  font-size: 14pt;
-  }
 
 .overlay p {
   padding-left: 6px;
@@ -135,6 +149,19 @@ img.profile {
   padding-bottom: 20px;
   padding-top: 10px;
   }
+  
+h2 {
+  font-family: 'flat-earth-scribe';
+  font-size: 50px;
+  color: rgba(55, 54, 50, 255);
+  text-align: center;
+}
+
+h3 {
+  font-family: 'flat-earth-scribe';
+  font-size: 30px;
+  text-align: center;
+}
   
 h4 {
   background-color: rgba(255,165,0, 1);
@@ -219,4 +246,24 @@ iframe {
   .profile {
     margin-bottom: 4px;
     }
+  .navbar-brand, .navbar-nav > li >a {
+    line-height: 30px;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+.navbar-toggle {
+    margin: 10px;
+    padding: 10px;
+}
+.navbar-default .navbar-nav > li:nth-child(4) {
+    background-color: black;
+}
+}
+
+@font-face {
+    font-family: 'flat-earth-scribe';
+    src: url('/fonts/flat-earth-scribe.ttf');
+    font-weight: normal;
+    font-style: normal;
+
 }
