@@ -57,7 +57,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   }
   
 .container-fluid#title {
@@ -67,7 +67,7 @@
 
 .row.paper {
   background: url('/images/paper-background-fade.png') no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -75,11 +75,11 @@
 
 .paper-bottom {
   background: url('/images/paper-bottom-fade.png') no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 60px;
-  margin-top: -25px;
+  margin-top: -75px;
 }
   
 .text-panel {
@@ -99,11 +99,11 @@
 
 p {
   padding: 5px 15px 15px 15px;
-  font-size: 16px;
+  font-size: 18px;
   }
 
 .text-panel h2, p {
-  padding: 5px 25px 15px 35px;
+  padding: 5px 45px 15px 45px;
 }
    
 #info1 {
@@ -152,7 +152,7 @@ img.profile {
   
 h2 {
   font-family: 'flat-earth-scribe';
-  font-size: 50px;
+  font-size: 70px;
   color: rgba(55, 54, 50, 255);
   text-align: center;
 }
@@ -249,15 +249,18 @@ iframe {
   .navbar-brand, .navbar-nav > li >a {
     line-height: 30px;
     padding: 8px 10px;
-    font-size: 18px;
-}
-.navbar-toggle {
+    font-size: 28px;
+  }
+  .navbar-toggle {
     margin: 10px;
     padding: 10px;
-}
-.navbar-default .navbar-nav > li:nth-child(4) {
+  }
+  .navbar-default .navbar-nav > li:nth-child(4) {
     background-color: black;
-}
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
 
 @font-face {
