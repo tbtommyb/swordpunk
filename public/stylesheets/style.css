@@ -18,7 +18,7 @@
   line-height: 40px;
   padding: 10px 15px;
   font-family: 'Macondo Swash Caps';
-  font-size: 27px;
+  font-size: 1.8em;
 }
 .navbar-toggle {
     margin: 20px;
@@ -37,6 +37,7 @@
 .navbar-default .navbar-nav > li:nth-child(4) {
     background-color: rgba(237, 150, 42, 255);
 }
+
 #title {
   padding-left: 0px;
   width: 100%;
@@ -48,15 +49,6 @@
   width: 90%;
   margin: auto;
   }
-
-.clipped {
-  -webkit-clip-path: ellipse(48% 47% at 50% 50%);
-}
-
-.clip-border {
-  -webkit-clip-path: ellipse(49% 48% at 50% 50%);
-  background: #a30000;
-}
 
 .container-fluid.background {
   background: url('/images/background.jpg') no-repeat center center fixed;
@@ -107,7 +99,15 @@ p {
   max-width: 100%;
   max-height: 400px;
   margin: auto;
-  }
+  -webkit-clip-path: ellipse(48% 47% at 50% 50%);
+}
+  
+.clip-border {
+  -webkit-clip-path: ellipse(49% 48% at 50% 50%);
+  background: #a30000;
+  max-height: 100%;
+  max-width: 100%;
+}
   
 h2 {
   font-family: 'flat-earth-scribe';
