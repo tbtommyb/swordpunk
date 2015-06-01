@@ -17,12 +17,20 @@
 .navbar-brand, .navbar-nav > li >a {
   line-height: 40px;
   padding: 10px 15px;
-  font-family: 'Macondo Swash Caps';
+  font-family: 'flat-earth-scribe';
   font-size: 1.8em;
 }
 .navbar-toggle {
     margin: 20px;
     padding: 20px;
+}
+
+.navbar-default .navbar-toggle.collapsed:hover {
+  background-color: rgba(255, 220, 127, 255);
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #000000;
 }
 
 /* link */
@@ -99,14 +107,40 @@ p {
   max-width: 100%;
   max-height: 400px;
   margin: auto;
-  -webkit-clip-path: ellipse(48% 47% at 50% 50%);
+  -webkit-clip-path: ellipse(43% 47% at 50% 50%);
 }
   
 .clip-border {
-  -webkit-clip-path: ellipse(49% 48% at 50% 50%);
-  background: #a30000;
-  max-height: 100%;
-  max-width: 100%;
+  -webkit-clip-path: ellipse(44% 48% at 50% 50%);
+  background: #000000;
+  max-height: 400px;
+  max-width: 268px;
+  margin: auto;
+}
+
+.wrapper:hover .clip-border {
+  background: white;
+}
+
+.text-box {
+  background: rgba(0,0,0, 0.7);
+  display: none;
+  z-index: 999;
+  position: absolute;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.text-box p {
+  color: white;
+  padding: 2px;
+  font-size: 1.1em;
+  line-height: 110%;
+}
+
+#spacing {
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
   
 h2 {
@@ -114,10 +148,12 @@ h2 {
   font-size: 4.8em;
   color: rgba(55, 54, 50, 255);
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 h3 {
-  font-family: 'Macondo Swash Caps';
+  font-family: 'flat-earth-scribe';
   font-size: 2.2em;
   text-align: center;
 }
@@ -135,7 +171,7 @@ iframe {
   padding-bottom: 15px;
   max-width: 100%;
   max-height: auto;
-  }
+}
 
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -183,7 +219,7 @@ iframe {
     }
   .navbar-brand, .navbar-nav > li >a {
     line-height: 30px;
-    padding: 8px 10px;
+    padding: 6px 10px;
     font-size: 28px;
   }
   .navbar-toggle {
@@ -195,6 +231,9 @@ iframe {
   }
   h2 {
     font-size: 40px;
+  }
+  .paper-bottom {
+    margin-top: -145px;
   }
 }
 
