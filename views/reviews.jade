@@ -1,0 +1,129 @@
+extends ./layout.jade
+include mixins
+
+block header
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "/" ) Home
+            +nav_item( "venue" ) Venue
+            +nav_item( "galleries" ) Galleries
+            +nav_item( "tickets" ) Tickets
+            +nav_item( "dan" ) Dan
+            +nav_item( "faq") FAQs
+            +nav_item( "contact" ) Contact
+            +nav_item( "reviews" ) Reviews
+            
+block content
+    .container-fluid.background
+        .row.paper
+            .col-12.text-panel
+              h2 Swordpunk Reviews
+              p See what past attendees had to say about Swordpunk:
+              .review#circus
+                p.
+                  "Swordpunk was a wonderfully weird weekend in a beautiful location. 
+                  I'm always keen to try new things. Over a few days I got to learn 
+                  knife throwing with a master, practice my whip cracking and rope dart 
+                  and get into the basics of sword combat. The atmosphere was friendly 
+                  and welcoming and I met some great people who I've stayed in contact 
+                  with and in a few cases worked with on projects. I would recommend 
+                  this to anyone looking for something different.
+                  <br /><br />
+                  Don't go if you dislike getting dirt under your finger nails. 
+                  Do go if you have always secretly wanted to release your inner warrior!!!"
+                  <br />
+                h5 - Edward Gosling, circus performer, founder Chivaree Circus
+              .review#novice
+                p.
+                  "I am the clumsiest person on earth, so my friends were understandably 
+                  concerned for my well-being when I set off on a weekend of weapons 
+                  training. How would I cope with swords and throwing knives, when I have 
+                  twice injured myself with teaspoons?
+                  <br /><br />
+                  There were a number of skills on offer over the weekend: sword-fighting, 
+                  archery, knife-throwing and whip-cracking. Swords, it turns out, 
+                  are not for me. Move your arms and feet at the same time? There’s a 
+                  reason why most of my dancing involves bobbing around on the spot. 
+                  Throwing knives, on the other hand, I loved. There’s something very 
+                  satisfying about hurling blades around, and by the time I could hit 
+                  the target four throws out of five, I was feeling pretty proud of myself. 
+                  We had plenty of time to try out everything, and to focus on the things 
+                  we particularly enjoyed. All the instructors were enthusiastic, 
+                  skilled and (luckily for me) extremely patient!
+                  <br /><br />
+                  The training culminated in an assault course involving the skills we 
+                  had learned. I knew I had no chance of winning the speed competition, 
+                  but hoped not to embarrass myself too badly. Before even reaching the 
+                  first obstacle, I tripped and fell at the feet of an armoured orc, 
+                  who kindly refrained from ‘killing’ me while I scrabbled to my feet. 
+                  Mercy is the new slaughter, say 1 out of 7 million evil minions.
+                  <br /><br />
+                  We spent the time between sessions exploring the beautiful grounds of 
+                  Newnham Paddox, chatting around the bonfire and making new friends. 
+                  I’m feeling very nostalgic writing about it, and two things occur to me. 
+                  Firstly, I should find out when tickets go on sale for the next one. 
+                  Secondly, my attic is probably big enough for a knife throwing range. 
+                  What could possibly go wrong?"
+                h5 - Megan McClimont
+              .review#warrior
+                p.
+                  "SwordPunk is unique amongst martial arts events I have attended in 
+                  being as equally useful to the absolute novice as to the most grizzled of 
+                  veterans. Each exercise in the syllabus 
+                  could be taken at face value, demonstrating a simple mechanic, or 
+                  extrapolated into much more complex plays. Not only has the course 
+                  clearly been designed thus, but it also benefits from Dan's 
+                  exhaustive vocabulary of techniques, so after the briefest of 
+                  discussions Dan can send each student off on tasks 
+                  appropriate to their particular skill level and 
+                  interpretation of the initial technique. This not only makes the course 
+                  relevant and accessible for all, 
+                  but also produces numerous variations on a theme, allowing each student 
+                  to develop a unique insight into the core technique and then share 
+                  their findings to all.
+                  <br /><br />
+                  On top of the technical excellence of the course it is also an enormous 
+                  amount of fun, whether you are interested in martial arts or are more concerned with stage 
+                  combat, re-enactment, performance art, trying out something utterly 
+                  new, or even thought no further than 'swords are cool'. The course allows 
+                  students to focus on weapons and disciplines which are of particular 
+                  interest to them but combines all in a climactic assault course, 
+                  beset with challenges of which the Crystal Maze would be proud. Close on the heels of the assault course follows the 
+                  fire circle and feasting. The fire circle itself is an impressive 
+                  installation in its own right, encompassed with a palisade of rough hewn stakes, 
+                  the summit of each crowned with a billowing brazier, festooned with 
+                  skulls and the accoutrements of war. Amidst this Wagnerian setting each 
+                  SwordPunk takes their turn to put into practice the techniques they have 
+                  gleaned, pitting themselves against none other than their former 
+                  master, Dan. Even the meekest of souls are spoken to by something 
+                  deeply primordial about the setting, atmosphere and camaraderie. 
+                  <br /><br />
+                  After the participants have expended the last of their vigour 
+                  in the circle, Mars departs, making way for his welcome usurper, 
+                  Bacchus and the feasting begins and is enjoyed with the gusto that 
+                  only comrades in arms can muster.
+                  <br /><br />
+                  Against the backdrop of such a splendid weekend, the final word 
+                  has to go to the architect of the event: Dan. Being a good martial artist 
+                  and a good teacher are two entirely different skills, but Dan is a consummate 
+                  master of both. 
+                  He combines a nigh-on unique background working at the Royal Armouries 
+                  in Leeds with the hard earned skills of a pragmatic 
+                  martial artist, who trains their art under stress to produce a well 
+                  rounded instructor. Combined with this martial and academic pedigree 
+                  Dan's keen eye 
+                  and subtle instruction will add polish and finesse to the best of 
+                  swordsmen, just as well as they build confidence and ability in a 
+                  novice. He can spot and adapt nuances in body mechanics that will see 
+                  the wild flailing of a beginner metamorphose into a vorschlag gaining 
+                  mutieren before the student is even fully aware of what they've 
+                  learned. Best of all, despite his formidable repertoire of martial 
+                  prowess and abilities, Dan is the nicest chap one could wish to meet 
+                  and both a pleasure and a privilege to train under.
+                h5 - Gil Harrison
+            .row#spacing
+        .row.paper-bottom
+            .col-12.text-panel

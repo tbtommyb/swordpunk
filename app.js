@@ -48,6 +48,14 @@ app.get('/galleries', function (req, res) {
 app.get('/contact', function (req, res) {
     res.render('contact');
     });
+
+app.get('/faq', function (req, res) {
+    res.render('faq');
+    });
+    
+app.get('/reviews', function (req, res) {
+    res.render('reviews');
+    });
     
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

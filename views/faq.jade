@@ -1,0 +1,113 @@
+extends ./layout.jade
+include mixins
+
+block header
+        .container-fluid#title
+            img#title-image(src='/images/title.png')
+        .container
+        
+        +nav("Swordpunk", "title_menu")
+            +nav_item( "/" ) Home
+            +nav_item( "venue" ) Venue
+            +nav_item( "galleries" ) Galleries
+            +nav_item( "tickets" ) Tickets
+            +nav_item( "dan" ) Dan
+            +nav_item( "faq") FAQs
+            +nav_item( "contact" ) Contact
+            +nav_item( "reviews" ) Reviews
+            
+block content
+    .container-fluid.background
+        .row.paper
+            .col-12.text-panel
+              h2 Frequently Asked Questions
+              h5 Who is this for?
+              p.
+                If you’ve been to Kelmarsh, KDF, Nowhere, Burning Man, Rumpus, Morning 
+                Glory or Secret Garden Party you’ll probably fit right in.
+                <br /><br />
+                If you haven’t been to any of these events, but you value communal 
+                experience over conflict and competition, you’ll probably fit right in.
+                <br /><br />
+                If you think learning and sharing skills is more important than grades 
+                and belts, you’ll probably fit right in.
+              h5 What we can promise...
+              p.
+                We can promise a wide range of skills to choose from, whatever your 
+                experience level.
+                <br /><br />
+                We can promise to make the experience as social, supportive and friendly 
+                as possible. We're not running Swordpunk to grade you, we're running it 
+                because we want to share skills with people who want to explore and learn.
+                <br /> <br />
+                We can promise that even if you struggle to learn a particular technique 
+                or skills we'll still have fun trying.
+                <br /><br />
+                We can promise that there will be a beautiful landscape for you to wander 
+                through if you want to sit out of a workshop.
+                <br /><br />
+                We can promise plenty of time for swimming, making new friends and sitting 
+                round a fire.
+              h5 What we can't promise
+              p.
+                We can't promise that these activities are risk free. Any form of physical 
+                training involves risk of physical injury. However, our instructor will 
+                always work to the highest standards of safety and we will have trained 
+                first aiders on site.
+                <br /><br />
+                We can't promise the weather will be perfect. This is England, after all. 
+                We will, however, have large covered areas to train in if the weather turns.
+                <br /><br />
+                We can't promise you a full night's sleep on Saturday. After the fire 
+                circle there'll be music and revelry - but we can promise the sound 
+                system will be turned off by midnight, so you have plenty of time to rest 
+                before Sunday's training.
+              h5 What about accommodation?
+              p.
+                Swordpunk takes place in the utterly beautiful and idyllic grounds of 
+                Newnham Paddox, a breathtaking estate landscaped by Capability Brown in 
+                17xx. There are woods to wander through, lakes to swim and even a 
+                sculpture park to stroll through.
+                <br /><br />
+                Everyone is invited to camp on site. While you are welcome to stay off site, 
+                we very strongly recommend the communal element of camping together for 
+                the weekend.
+                <br /><br />
+                While there will be some provision in case of rain, this is an outdoor event, 
+                so be prepared for the British weather! Expect to get a tan if it's sunny 
+                and expect a bit of damp if it rains!
+              h5 Is this event accessible for disabled people?
+              p.
+                Swordpunk aims at teaching anyone who wants to learn. While we have some 
+                limitations, we will strive to find solutions. If you have any concerns 
+                about whether you'd be able to take part in any of the workshops, please 
+                get in touch with as at xxx.
+              h5 Can I bring my kids?
+              p.
+                We love kids, and families are welcome at Swordpunk. However, children are 
+                not able to join in the training sessions and you are responsible for 
+                supervising your children at all times - this is an environment where 
+                knives are flying towards targets and grown ups are swinging swords.
+                <br /><br />
+                We ask that you get in touch beforehand and let us know if you are planning 
+                on coming with kids.
+              h5 What about my dog/cat/pet Lemurian sabre-toothed tiger?
+              p.
+                Unfortunately we have to ask that you leave Tiddles behind. Sorry, Tiddles. 
+                Having said that, if you arrive at Swordpunk riding a woolly mammoth you win!
+              h5 Isn't this dangerous?
+              p.
+                Yes. We are training with weapons that, by definition, are objects designed 
+                to cause injury. However, we believe that with care, attention and training, 
+                these objects can be used safely. We train with unsharpened swords, but our 
+                arrows and throwing knives are real, sharp arrows and knives. Unless you 
+                are a Jedi you will almost certainly hit yourself at least once with a bull 
+                whip and it will hurt - but we will ask you to wear goggles and a wide 
+                brimmed hat before you use a whip.
+                <br /><br />
+                It is imperative that you follow the instructions of workshop leaders and 
+                that you care for the safety of your fellow Swordpunkers. We are not here 
+                to win against each other but to win together.
+            .row#spacing  
+        .row.paper-bottom
+            .col-12.text-panel
