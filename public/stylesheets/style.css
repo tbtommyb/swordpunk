@@ -1,13 +1,13 @@
 #title-image {
   width: 100%;
   height: auto;
-  padding-right: 0px;
+  padding-right: 0;
   }
   
 .navbar {
-  margin-bottom: 0px;
-  padding-right: 0px;
-  border-radius: 0px;
+  margin-bottom: 0;
+  padding-right: 0;
+  border-radius: 0;
   }
 
 .navbar-default {
@@ -25,31 +25,31 @@
     padding: 20px;
 }
 
-.navbar-default .navbar-toggle.collapsed:hover {
-  background-color: rgba(255, 220, 127, 255);
+.navbar-default, .navbar-toggle.collapsed:hover {
+  background-color: rgb(255, 220, 127);
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default, .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #000000;
 }
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: rgba(231, 228, 235, 255);
+    color: rgb(231, 228, 235);
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: rgba(255, 220, 127, 255);
+    color: rgb(255, 220, 127);
 }
 
 .navbar-default .navbar-nav > li:nth-child(4) {
-    background-color: rgba(237, 150, 42, 255);
+    background-color: rgb(237, 150, 42);
 }
 
 #title {
-  padding-left: 0px;
+  padding-left: 0;
   width: 100%;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .row.wrap {
@@ -124,11 +124,11 @@ p {
 }
 
 .text-box {
-  background: rgba(237, 150, 42, 1);
+  background: rgb(237, 150, 42);
   display: none;
   z-index: 999;
   position: absolute;
-  border-color: rgba(255, 220, 127, 1);
+  border-color: rgb(255, 220, 127);
   border-style: solid;
   border-width: 2px;
   border-radius: 5px;
@@ -154,7 +154,7 @@ p {
 h2 {
   font-family: 'flat-earth-scribe';
   font-size: 4.8em;
-  color: rgba(55, 54, 50, 255);
+  color: rgb(55, 54, 50);
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -176,6 +176,7 @@ h5 {
 
 .border {
   border-style: solid;
+  border-color: rgb(255,255,255);
   border-color: rgba(255,255,255,0.9);
   border-width: 2px;
   max-width: 90%;
